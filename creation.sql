@@ -80,3 +80,63 @@ create table crew (
     primary key (employee_id,
                  flight_id)
 );
+
+  create type baggage_status as enum ('lost','accept','sent','returned');
+  create type seat_class as enum('business','economy');
+  create type room_class as enum('middle', 'comfort','comfort+');
+  create table passenger(
+    id serial primary key,
+    name varchar(30),
+    second_name varchar(30),
+    third_name varchar(30),
+    passport_no char(10),
+    birthday date
+  );
+  create table booking(
+    id serial primary key,
+    book_date timestamp,
+    total_amount integer,
+    time_amount integer,
+    contact_data text
+    check(total_amount>0 and time_amount>0)
+  );
+  create table seat(
+    id serial primary key,
+    number varchar(3),
+    flight_id integer,
+    class seat_class
+  );
+create table ticket(
+    id serial primary key,
+    passanger_id integer,
+    flight_id integer,
+    seat_id integer,
+    amount integer,
+    book_id integer,
+    registered boolean,
+  foreign key(book_id) references booking(id),
+  foreign key(passanger_id) references passenger(id),
+  foreign key (flight_id) references flight(id),
+  foreign key (seat_id) references seat(id),
+  check(amount>0)
+  );
+
+  create table baggage(
+    id serial primary key,
+    ticket_id integer,
+    total_weight real,
+    max_weight real,
+    status baggage_status,
+    foreign key(ticket_id) references ticket(id),
+    check (total_weight>0 and max_weight>0)
+  );
+
+  create table relax_room_booking(
+    id serial primary key ,
+    ticket_id integer,
+    class room_class,
+    foreign key(ticket_id) references ticket(id)
+  )
+
+
+
