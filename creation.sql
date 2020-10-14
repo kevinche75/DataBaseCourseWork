@@ -21,8 +21,8 @@ create table employee (
   name varchar(30) not null,
   second_name varchar(30) not null,
   third_name varchar(30),
-
-  position varchar(20) not null
+  position varchar(20) not null,
+  check ( passport_no ~ '[0-9]{10}' )
 );
 
 create table aircraft (
@@ -35,7 +35,7 @@ create table aircraft (
 
 create table flight (
   id serial primary key,
-  aircraft_id varchar(10) references aircraft(id) on delete cascade,
+  aircraft_id varchar(10) references aircraft(id) on delete cascade not null ,
   schedule_departure timestamptz not null,
   schedule_arrival timestamptz not null,
   actual_departure timestamptz not null,
@@ -43,7 +43,9 @@ create table flight (
   status flight_status not null,
   departure_airport varchar(4) not null,
   arrival_airport varchar(4) not null,
-  check ( departure_airport <> arrival_airport and schedule_arrival>schedule_departure and actual_arrival>actual_departure)
+  check ( departure_airport <> arrival_airport
+              and schedule_arrival>schedule_departure
+              and actual_arrival>actual_departure)
 );
 
 CREATE OR REPLACE FUNCTION flight_insert() RETURNS trigger AS '
@@ -64,7 +66,7 @@ create table reception_schedule (
   reception_number smallint not null,
   start_time timestamptz not null,
   finish_time timestamptz not null,
-  check ( reception_number > 0 )
+  check ( reception_number > 0 and start_time < finish_time)
 );
 
 create table gate_schedule (
@@ -74,7 +76,7 @@ create table gate_schedule (
   gate_number smallint not null,
   start_time timestamptz not null,
   finish_time timestamptz not null,
-  check ( gate_number > 0 )
+  check ( gate_number > 0  and start_time < finish_time)
 );
 
 create table crew (
@@ -91,7 +93,8 @@ create table passenger(
   second_name varchar(30) not null,
   third_name varchar(30),
   birthday date not null,
-  check (birthday<current_date)
+  check (birthday<current_date),
+  check ( passport_no ~ '[0-9]{10}' )
 );
 create table booking(
   id serial primary key,
@@ -99,28 +102,30 @@ create table booking(
   total_amount integer,
   time_amount integer,
   contact_data text,
-  check(total_amount>0 and time_amount>0),
-  check(book_date<current_date)
+  check(total_amount>0
+            and time_amount>0
+            and book_date<current_date)
 );
 create table seat(
   id serial primary key,
   number varchar(3) not null,
   flight_id integer not null,
   class seat_class not null,
-  foreign key(flight_id) references flight(id)
+  foreign key(flight_id) references flight(id),
+  check ( number ~ '[A-Z]{1}[0-9]{2}' )
 );
 create table ticket(
   id serial primary key,
-  passanger_id char(10),
+  passenger_id char(10) ,
   flight_id integer not null,
   seat_id integer not null,
   amount integer not null,
   book_id integer not null,
   registered boolean not null,
   foreign key(book_id) references booking(id) on delete cascade,
-  foreign key(passanger_id) references passenger(passport_no),
-  foreign key (flight_id) references flight(id),
-  foreign key (seat_id) references seat(id),
+  foreign key(passenger_id) references passenger(passport_no) on delete set null ,
+  foreign key (flight_id) references flight(id) on delete cascade,
+  foreign key (seat_id) references seat(id) on delete cascade,
   check(amount>0)
 );
 
@@ -156,12 +161,9 @@ VALUES ('3333333333','petrov','petr','petrovi4','180-01-08');
 insert into booking(book_date, total_amount, time_amount, contact_data)
 values ('1999-01-02 03:05:06',6,6,'676787');
 insert into seat(number, flight_id, class) values ('21a',1,'economy');
-insert into ticket(passanger_id, flight_id, seat_id, amount, book_id, registered)
+insert into ticket(passenger_id, flight_id, seat_id, amount, book_id, registered)
 values ('3333333333',1,1,12,1,true );
 insert into baggage(ticket_id, total_weight, max_weight, status)
 values (1,3,3,'lost');
 insert into relax_room_booking(ticket_id, class)
 values (1,'comfort+');
-
-
-
