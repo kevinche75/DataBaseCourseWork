@@ -149,7 +149,7 @@ insert into reception_schedule(employee_id, flight_id, reception_number, start_t
 VALUES (1,2,1,'1999-01-08 02:05:06','1999-01-08 03:05:06');
 insert into gate_schedule(employee_id, flight_id, gate_number, start_time, finish_time)
 VALUES (1,2,2,'1999-01-08 03:05:06','1999-01-08 04:05:06') ;
-
+insert into crew(employee_id, flight_id) VALUES (1,2);
 
 
 
