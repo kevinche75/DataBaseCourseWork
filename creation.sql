@@ -48,17 +48,6 @@ create table flight (
           and actual_arrival>actual_departure)
 );
 
-CREATE OR REPLACE FUNCTION flight_insert() RETURNS trigger AS '
-    BEGIN
-        NEW.actual_departure := NEW.schedule_departure;
-        NEW.actual_arrival := NEW.schedule_arrival;
-        RETURN NEW;
-    END;'
-LANGUAGE plpgsql;
-
-CREATE TRIGGER flight_insert BEFORE INSERT ON flight FOR
-EACH ROW EXECUTE PROCEDURE flight_insert();
-
 create table reception_schedule (
   id serial primary key,
   employee_id char(10) references employee(passport_no) on delete set null,
@@ -98,13 +87,11 @@ create table passenger(
 );
 create table booking(
   id serial primary key,
-  book_date timestamptz not null,
   total_amount integer,
-  time_amount integer,
+  time_limit integer,
   contact_data text,
   check(total_amount>0
-        and time_amount>0
-        and book_date<current_date)
+        and time_limit>0)
 );
 create table seat(
   id serial primary key,
@@ -117,14 +104,12 @@ create table seat(
 create table ticket(
   id serial primary key,
   passenger_id char(10) ,
-  flight_id integer not null,
   seat_id integer not null,
   amount integer not null,
   book_id integer,
   registered boolean not null,
   foreign key(book_id) references booking(id),
   foreign key(passenger_id) references passenger(passport_no) on delete set null ,
-  foreign key (flight_id) references flight(id) on delete cascade,
   foreign key (seat_id) references seat(id) on delete cascade,
   check(amount>0)
 );
@@ -158,11 +143,11 @@ VALUES ('1111111111',1,1889,'1999-01-08 03:05:06','1999-01-08 04:05:06') ;
 insert into crew(employee_id, flight_id) VALUES ('1111111111',1);
 insert into passenger(passport_no,name, second_name, third_name, birthday)
 VALUES ('3333333333','petrov','petr','petrovi4','180-01-08');
-insert into booking(book_date, total_amount, time_amount, contact_data)
-values ('1999-01-02 03:05:06',6,6,'676787');
+insert into booking( total_amount, time_limit, contact_data)
+values (6,6,'676787');
 insert into seat(number, flight_id, class) values ('A21',1,'economy');
-insert into ticket(passenger_id, flight_id, seat_id, amount, book_id, registered)
-values ('3333333333',1,1,12,1,true );
+insert into ticket(passenger_id, seat_id, amount, book_id, registered)
+values ('3333333333',1,12,1,true );
 insert into baggage(ticket_id, total_weight, max_weight, status)
 values (1,3,3,'lost');
 insert into relax_room_booking(ticket_id, class)

@@ -95,3 +95,48 @@ create or replace function check_booking() returns void as $$
         commit;
     end; $$
 language plpgsql
+
+create function add_passenger(varchar(30),varchar(30),varchar(30),char(10),date) returns boolean as '
+begin
+  if  (select true from  passenger where passport_no=$4) then return true; end if ;
+  insert into passenger (passport_no, name, second_name, third_name, birthday)
+  values (passport_no, $1, $2, $3, $4);
+  return true;
+end;
+'language 'plpgsql';
+
+create function create_ticket(char(10),integer,varchar(3), varchar(30),varchar(30),varchar(30),date) returns boolean as '
+  begin
+  if add_passenger($4,$5,$6,$1,$7) then
+  insert into ticket (passenger_id,  seat_id, amount, book_id, registered)
+  values ($1,(select id from seat where number=$3 and seat.flight_id=$2), 333, 555, false);
+    end if;
+    return true;
+end;'
+language 'plpgsql';
+
+create function add_baggage(integer,real) returns void as'
+begin
+  insert into baggage(ticket_id, max_weight) values ($1,$2);
+end;
+
+'language 'plpgsql';
+
+create function relax_room_book(integer, room_class) returns void as '
+begin
+  insert into relax_room_booking(ticket_id, class) VALUES ($1,$2);
+end;
+'language 'plpgsql';
+
+
+create function to_book_trip(text,smallint,flight integer,variadic ticket_data varchar(30)[]) returns void as '
+begin
+insert into booking( total_amount, time_limit, contact_data)
+values (222,current_timestamp+7200,$1);
+  for i in 1..$2 by 6 loop
+   if create_ticket(ticket_data[i],flight,ticket_data[i+1],ticket_data[i+2],ticket_data[i+3],ticket_data[i+4],ticket_data[i+5]) then continue ; end if ;
+  end loop;
+  end ;
+'language 'plpgsql';
+
+select to_book_trip('rtghbjhhg',1,1, variadic array ['1111111111','A21','i','i','i','1999-01-08'])
