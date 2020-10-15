@@ -38,14 +38,14 @@ create table flight (
   aircraft_id varchar(10) references aircraft(id) on delete cascade not null ,
   schedule_departure timestamptz not null,
   schedule_arrival timestamptz not null,
-  actual_departure timestamptz not null,
-  actual_arrival timestamptz not null,
+  actual_departure timestamptz,
+  actual_arrival timestamptz,
   status flight_status not null,
   departure_airport varchar(4) not null,
   arrival_airport varchar(4) not null,
   check ( departure_airport <> arrival_airport
-              and schedule_arrival>schedule_departure
-              and actual_arrival>actual_departure)
+          and schedule_arrival>schedule_departure
+          and actual_arrival>actual_departure)
 );
 
 CREATE OR REPLACE FUNCTION flight_insert() RETURNS trigger AS '
@@ -103,8 +103,8 @@ create table booking(
   time_amount integer,
   contact_data text,
   check(total_amount>0
-            and time_amount>0
-            and book_date<current_date)
+        and time_amount>0
+        and book_date<current_date)
 );
 create table seat(
   id serial primary key,
@@ -120,9 +120,9 @@ create table ticket(
   flight_id integer not null,
   seat_id integer not null,
   amount integer not null,
-  book_id integer not null,
+  book_id integer,
   registered boolean not null,
-  foreign key(book_id) references booking(id) on delete cascade,
+  foreign key(book_id) references booking(id),
   foreign key(passenger_id) references passenger(passport_no) on delete set null ,
   foreign key (flight_id) references flight(id) on delete cascade,
   foreign key (seat_id) references seat(id) on delete cascade,
@@ -160,7 +160,7 @@ insert into passenger(passport_no,name, second_name, third_name, birthday)
 VALUES ('3333333333','petrov','petr','petrovi4','180-01-08');
 insert into booking(book_date, total_amount, time_amount, contact_data)
 values ('1999-01-02 03:05:06',6,6,'676787');
-insert into seat(number, flight_id, class) values ('21a',1,'economy');
+insert into seat(number, flight_id, class) values ('A21',1,'economy');
 insert into ticket(passenger_id, flight_id, seat_id, amount, book_id, registered)
 values ('3333333333',1,1,12,1,true );
 insert into baggage(ticket_id, total_weight, max_weight, status)
