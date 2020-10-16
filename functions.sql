@@ -105,15 +105,15 @@ begin
 end; $$
 language plpgsql;
 
-create function create_ticket(char(10),integer,varchar(3), varchar(30),varchar(30),varchar(30),date) returns boolean as $$
+create or replace function create_ticket( passport char(10),flight integer,seeat varchar(3),name varchar(30),secname varchar(30), thirdname varchar(30),dat date, amount integer, book integer) returns boolean as $$
   begin
-  if add_passenger($4,$5,$6,$1,$7) then
+  if add_passenger(name,secname,thirdname,passport,dat) then
   insert into ticket (passenger_id,  seat_id, amount, book_id, registered)
-  values ($1,(select id from seat where number=$3 and seat.flight_id=$2), 333, 555, false);
+  values (passport,(select id from seat where number=seeat and seat.flight_id=flight), amount, book, false);
     end if;
     return true;
 end;$$
-language plpgsql;
+language 'plpgsql';
 
 
 
@@ -131,10 +131,16 @@ language plpgsql;
 
 
 create or replace function to_book_trip(text, am integer) returns integer as $$
+declare idd integer;
 begin
-insert into booking( total_amount, time_limit, contact_data)
-values (am,current_timestamp+7200,$1)returning id;
-  end ;$$
+   insert into booking( total_amount, time_limit, contact_data)
+  values (am,current_timestamp+interval '2 hour',$1)returning id into idd;
+  return idd;
+end ;$$
 language plpgsql;
 
 select to_book_trip('rtghbjhhg',1);
+
+
+select create_ticket('1111112222',1,'A21','aaa','aaa','aaa','01-08-2000',77,1);
+
