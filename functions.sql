@@ -130,14 +130,11 @@ end; $$
 language plpgsql;
 
 
-create function to_book_trip(text,smallint,flight integer,variadic ticket_data varchar(30)[]) returns void as $$
+create or replace function to_book_trip(text, am integer) returns integer as $$
 begin
 insert into booking( total_amount, time_limit, contact_data)
-values (222,current_timestamp+7200,$1);
-  for i in 1..$2 by 6 loop
-   if create_ticket(ticket_data[i],flight,ticket_data[i+1],ticket_data[i+2],ticket_data[i+3],ticket_data[i+4],ticket_data[i+5]) then continue ; end if ;
-  end loop;
+values (am,current_timestamp+7200,$1)returning id;
   end ;$$
 language plpgsql;
 
-select to_book_trip('rtghbjhhg',1,1, variadic array ['1111111111','A21','i','i','i','1999-01-08'])
+select to_book_trip('rtghbjhhg',1);
