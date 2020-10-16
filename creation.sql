@@ -27,7 +27,7 @@ create table employee (
 
 create table aircraft (
   id varchar(10) primary key,
-  location varchar(3),
+  location varchar(4),
   owner_id varchar(30) references company(name) on delete set null,
   model varchar(30) not null
 );
