@@ -1,143 +1,144 @@
-CREATE OR REPLACE FUNCTION flight_insert() RETURNS trigger AS $$
-    BEGIN
-        NEW.actual_departure := NEW.schedule_departure;
-        NEW.actual_arrival := NEW.schedule_arrival;
-        RETURN NEW;
-    END;$$
-LANGUAGE plpgsql;
+create type comp_type as enum ('airport', 'cafe', 'cleaning', 'airline');
+create type flight_status as enum (
+  'scheduled', 'delayed',
+  'departed', 'in air',
+  'expected', 'diverted',
+  'recovery', 'landed',
+  'arrived', 'cancelled',
+  'no takeoff info', 'past flight');
+create type baggage_status as enum ('lost','accept','sent','returned');
+create type seat_class as enum('business','economy');
+create type room_class as enum('middle', 'comfort','comfort+');
 
-CREATE TRIGGER flight_insert BEFORE INSERT ON flight FOR
-EACH ROW EXECUTE PROCEDURE flight_insert();
+create table company (
+  name varchar(30) primary key,
+  type comp_type
+);
 
-create or replace function get_number_available_seats(
-    date_ date,
-    departure_airport_ varchar(4),
-    arrival_airport_ varchar(4)
-    ) returns table (
-        flight_id int,
-        schedule_departure timestamptz,
-        schedule_arrival timestamptz,
-        seats_number bigint
-                    ) as $$
-    begin
-        return query
-            with available_flight as (
-                select * from flight where
-                                           flight.departure_airport = departure_airport_ and
-                                           flight.arrival_airport = arrival_airport_ and
-                                           flight.schedule_departure::date = date_
-            ), available_seats_number as (
-                select seat.flight_id, count(*) as seats_number from seat
-                left join ticket t on seat.id = t.seat_id
-                where t.id is null
-                group by seat.flight_id
-                )
-            select id, available_flight.schedule_departure, available_flight.schedule_arrival, a.seats_number from available_flight
-                inner join available_seats_number a on a.flight_id = id;
-    end; $$
-    language plpgsql;
+create table employee (
+  passport_no char(10) primary key,
+  company varchar(30) references company (name) on delete cascade not null,
+  name varchar(30) not null,
+  second_name varchar(30) not null,
+  third_name varchar(30),
+  position varchar(20) not null,
+  check ( passport_no ~ '[0-9]{10}' )
+);
 
-select get_number_available_seats('1999-01-08', 'svo', 'led');
-
-create or replace function calc_ticket_price(
-    flight_id int,
-    seat_number varchar(3)
-    ) returns float as $$
-    declare
-        airport_tax float = 1.05;
-        month_tax float = 1.002;
-        half_month_tax float = 1.05;
-        week_tax float = 1.1;
-        economy_tax float = 1.01;
-        business_tax float = 1.1;
-        result float;
-    begin
-        with result_price as (
-        select price::float*airport_tax as r_price, extract(day from f.schedule_departure - now()) as days, class
-        from trip_price as t
-        join flight f on
-            f.id = flight_id and
-            t.arrival_airport = f.arrival_airport and
-            t.departure_airport = f.departure_airport or
-            t.arrival_airport = f.departure_airport and
-            t.departure_airport = f.arrival_airport
-        join seat s on f.id = s.flight_id and s.number = seat_number
-            ), result_price_1 as (
-            select result_price.class, result_price.r_price, case
-                when result_price.days > 30 then result_price.r_price*month_tax
-                when result_price.days <= 30 and result_price.days > 15 then result_price.r_price*half_month_tax
-                when result_price.days <= 15 then result_price.r_price*week_tax
-            end as r_price_1
-                from result_price
-            ), result_price_2 as (
-            select result_price_1.class, result_price_1.r_price_1,
-            case
-                when result_price_1.class = 'economy' then result_price_1.r_price_1*economy_tax
-                when result_price_1.class = 'business' then result_price_1.r_price_1*business_tax
-            end as price
-                from result_price_1
-            ) select into result result_price_2.price from result_price_2;
-        return result;
-    end; $$
-language plpgsql;
-
-select calc_ticket_price(1, 'A21');
-
-create or replace function check_booking() returns void as $$
-    begin
-        start transaction ;
-        with delete_id as (
-            select booking.id as id from booking where time_limit > now()
-        ), delete_0 as (
-            delete from ticket where book_id = delete_id.id
-        )
-            delete from booking where booking.id = delete_id.id;
-        commit;
-    end; $$
-language plpgsql;
-
-create function add_passenger(varchar(30),varchar(30),varchar(30),char(10),date) returns boolean as $$
-begin
-  if  (select true from  passenger where passport_no=$4) then return true; end if ;
-  insert into passenger (passport_no, name, second_name, third_name, birthday)
-  values (passport_no, $1, $2, $3, $4);
-  return true;
-end; $$
-language plpgsql;
-
-create function create_ticket(char(10),integer,varchar(3), varchar(30),varchar(30),varchar(30),date) returns boolean as $$
-  begin
-  if add_passenger($4,$5,$6,$1,$7) then
-  insert into ticket (passenger_id,  seat_id, amount, book_id, registered)
-  values ($1,(select id from seat where number=$3 and seat.flight_id=$2), 333, 555, false);
-    end if;
-    return true;
-end;$$
-language plpgsql;
+create table aircraft (
+  id varchar(10) primary key,
+  location varchar(30),
+  owner_id varchar(30) references company(name) on delete set null,
+  model varchar(30) not null
+);
 
 
+create table flight (
+  id serial primary key,
+  aircraft_id varchar(10) references aircraft(id) on delete cascade not null ,
+  schedule_departure timestamptz not null,
+  schedule_arrival timestamptz not null,
+  actual_departure timestamptz,
+  actual_arrival timestamptz,
+  status flight_status not null,
+  departure_airport varchar(4) not null,
+  arrival_airport varchar(4) not null,
+  check ( departure_airport <> arrival_airport
+          and schedule_arrival>schedule_departure
+          and actual_arrival>actual_departure)
+);
 
-create function add_baggage(integer,real) returns void as $$
-begin
-  insert into baggage(ticket_id, max_weight) values ($1,$2);
-end; $$
-language plpgsql;
+create table reception_schedule (
+  id serial primary key,
+  employee_id char(10) references employee(passport_no) on delete set null,
+  flight_id int references flight(id) on delete cascade,
+  reception_number smallint not null,
+  start_time timestamptz not null,
+  finish_time timestamptz not null,
+  check ( reception_number > 0 and start_time < finish_time)
+);
 
-create function relax_room_book(integer, room_class) returns void as $$
-begin
-  insert into relax_room_booking(ticket_id, class) VALUES ($1,$2);
-end; $$
-language plpgsql;
+create table gate_schedule (
+  id serial primary key,
+  employee_id char(10) references employee(passport_no) on delete set null,
+  flight_id int references flight(id) on delete cascade,
+  gate_number smallint not null,
+  start_time timestamptz not null,
+  finish_time timestamptz not null,
+  check ( gate_number > 0  and start_time < finish_time)
+);
+
+create table crew (
+  employee_id char(10) references employee(passport_no) on delete set null,
+  flight_id int references flight(id) on delete cascade,
+  primary key (employee_id,
+               flight_id)
+);
 
 
-create function to_book_trip(text,smallint,flight integer,variadic ticket_data varchar(30)[]) returns void as $$
-begin
-insert into booking( total_amount, time_limit, contact_data)
-values (222,current_timestamp+7200,$1);
-  for i in 1..$2 by 6 loop
-   if create_ticket(ticket_data[i],flight,ticket_data[i+1],ticket_data[i+2],ticket_data[i+3],ticket_data[i+4],ticket_data[i+5]) then continue ; end if ;
-  end loop;
-  end ;$$
-language plpgsql;
+create table passenger(
+  passport_no char(10) primary key ,
+  name varchar(30) not null,
+  second_name varchar(30) not null,
+  third_name varchar(30),
+  birthday date not null,
+  check (birthday<current_date),
+  check ( passport_no ~ '[0-9]{10}' )
+);
+create table booking(
+  id serial primary key,
+  total_amount integer,
+  time_limit integer,
+  contact_data text,
+  check(total_amount>0
+        and time_limit>0)
+);
+create table seat(
+  id serial primary key,
+  number varchar(3) not null,
+  flight_id integer not null,
+  class seat_class not null,
+  foreign key(flight_id) references flight(id),
+  check ( number ~ '[A-Z]{1}[0-9]{2}' )
+);
+create table ticket(
+  id serial primary key,
+  passenger_id char(10) ,
+  seat_id integer not null,
+  amount integer not null,
+  book_id integer,
+  registered boolean not null,
+  foreign key(book_id) references booking(id),
+  foreign key(passenger_id) references passenger(passport_no) on delete set null ,
+  foreign key (seat_id) references seat(id) on delete cascade,
+  check(amount>0)
+);
 
-select to_book_trip('rtghbjhhg',1,1, variadic array ['1111111111','A21','i','i','i','1999-01-08'])
+create table baggage(
+  id serial primary key,
+  ticket_id integer not null,
+  total_weight real,
+  max_weight real not null,
+  status baggage_status,
+  foreign key(ticket_id) references ticket(id) on delete cascade,
+  check (total_weight>0 and max_weight>0)
+);
+
+create table relax_room_booking(
+  id serial primary key,
+  ticket_id integer not null,
+  class room_class not null,
+  foreign key(ticket_id) references ticket(id) on delete cascade
+);
+
+create table trip_price (
+company_name varchar(30) references company(name) on delete cascade,
+departure_airport varchar(4) not null,
+arrival_airport varchar(4) not null,
+price int not null,
+check ( price > 0 ),
+primary key (company_name, departure_airport, arrival_airport, price)
+);
+
+create index on trip_price(company_name, departure_airport, arrival_airport);
+create index on flight(id);
