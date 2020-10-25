@@ -96,11 +96,11 @@ create or replace function check_booking() returns void as $$
     end; $$
 language plpgsql;
 
-create function add_passenger(varchar(30),varchar(30),varchar(30),char(10),date) returns boolean as $$
+create or replace function add_passenger(varchar(30),varchar(30),varchar(30), pasp char(10),date) returns boolean as $$
 begin
   if  (select true from  passenger where passport_no=$4) then return true; end if ;
   insert into passenger (passport_no, name, second_name, third_name, birthday)
-  values (passport_no, $1, $2, $3, $4);
+  values (pasp, $1, $2, $3, $5);
   return true;
 end; $$
 language plpgsql;
@@ -117,13 +117,13 @@ language 'plpgsql';
 
 
 
-create function add_baggage(integer,real) returns void as $$
+create or replace function add_baggage(integer,real) returns void as $$
 begin
   insert into baggage(ticket_id, max_weight) values ($1,$2);
 end; $$
 language plpgsql;
 
-create function relax_room_book(integer, room_class) returns void as $$
+create or replace function relax_room_book(integer, room_class) returns void as $$
 begin
   insert into relax_room_booking(ticket_id, class) VALUES ($1,$2);
 end; $$
