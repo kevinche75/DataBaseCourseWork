@@ -10,12 +10,12 @@ create type baggage_status as enum ('lost','accept','sent','returned');
 create type seat_class as enum('business','economy');
 create type room_class as enum('middle', 'comfort','comfort+');
 
-create table company (
+create table if not exists company (
   name varchar(30) primary key,
   type comp_type
 );
 
-create table employee (
+create table if not exists employee (
   passport_no char(10) primary key,
   company varchar(30) references company (name) on delete cascade not null,
   name varchar(30) not null,
@@ -25,7 +25,7 @@ create table employee (
   check ( passport_no ~ '[0-9]{10}' )
 );
 
-create table aircraft (
+create table if not exists aircraft (
   id varchar(10) primary key,
   location varchar(4),
   owner_id varchar(30) references company(name) on delete set null,
@@ -33,7 +33,7 @@ create table aircraft (
 );
 
 
-create table flight (
+create table if not exists flight (
   id serial primary key,
   aircraft_id varchar(10) references aircraft(id) on delete cascade not null ,
   schedule_departure timestamptz not null,
@@ -48,7 +48,7 @@ create table flight (
           and actual_arrival>actual_departure)
 );
 
-create table reception_schedule (
+create table if not exists reception_schedule (
   id serial primary key,
   employee_id char(10) references employee(passport_no) on delete set null,
   flight_id int references flight(id) on delete cascade,
@@ -58,7 +58,7 @@ create table reception_schedule (
   check ( reception_number > 0 and start_time < finish_time)
 );
 
-create table gate_schedule (
+create table if not exists gate_schedule (
   id serial primary key,
   employee_id char(10) references employee(passport_no) on delete set null,
   flight_id int references flight(id) on delete cascade,
@@ -68,7 +68,7 @@ create table gate_schedule (
   check ( gate_number > 0  and start_time < finish_time)
 );
 
-create table crew (
+create table if not exists crew (
   employee_id char(10) references employee(passport_no) on delete set null,
   flight_id int references flight(id) on delete cascade,
   primary key (employee_id,
@@ -76,7 +76,7 @@ create table crew (
 );
 
 
-create table passenger(
+create table if not exists passenger(
   passport_no char(10) primary key ,
   name varchar(30) not null,
   second_name varchar(30) not null,
@@ -85,15 +85,15 @@ create table passenger(
   check (birthday<current_date),
   check ( passport_no ~ '[0-9]{10}' )
 );
-create table booking(
+create table if not exists booking(
   id serial primary key,
   total_amount integer,
   time_limit timestamptz,
   contact_data text,
   check(total_amount>0
-        and time_limit>0)
+        and time_limit<now())
 );
-create table seat(
+create table if not exists seat(
   id serial primary key,
   number varchar(3) not null,
   flight_id integer not null,
@@ -101,11 +101,11 @@ create table seat(
   foreign key(flight_id) references flight(id),
   check ( number ~ '[A-Z]{1}[0-9]{2}' )
 );
-create table ticket(
+create table if not exists ticket(
   id serial primary key,
   passenger_id char(10) ,
   seat_id integer not null,
-  amount integer not null,
+  amount float not null,
   book_id integer,
   registered boolean not null,
   foreign key(book_id) references booking(id),
@@ -114,7 +114,7 @@ create table ticket(
   check(amount>0)
 );
 
-create table baggage(
+create table if not exists baggage(
   id serial primary key,
   ticket_id integer not null,
   total_weight real,
@@ -124,14 +124,14 @@ create table baggage(
   check (total_weight>0 and max_weight>0)
 );
 
-create table relax_room_booking(
+create table if not exists relax_room_booking(
   id serial primary key,
   ticket_id integer not null,
   class room_class not null,
   foreign key(ticket_id) references ticket(id) on delete cascade
 );
 
-create table trip_price (
+create table if not exists trip_price (
 company_name varchar(30) references company(name) on delete cascade,
 departure_airport varchar(4) not null,
 arrival_airport varchar(4) not null,
