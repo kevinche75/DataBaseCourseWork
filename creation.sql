@@ -88,7 +88,7 @@ create table passenger(
 create table booking(
   id serial primary key,
   total_amount integer,
-  time_limit integer,
+  time_limit timestamptz,
   contact_data text,
   check(total_amount>0
         and time_limit>0)
