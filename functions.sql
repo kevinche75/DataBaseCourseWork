@@ -85,16 +85,16 @@ select calc_ticket_price(1, 'A21');
 
 create or replace function check_booking() returns void as $$
     begin
-        start transaction ;
         with delete_id as (
-            select booking.id as id from booking where time_limit > now()
+            select booking.id as id from booking where time_limit < now()
         ), delete_0 as (
-            delete from ticket where book_id = delete_id.id
+            delete from ticket where exists(select 1 from delete_id where ticket.book_id = delete_id.id)
         )
-            delete from booking where booking.id = delete_id.id;
-        commit;
+            delete from booking where exists(select 1 from delete_id where booking.id = delete_id.id);
     end; $$
 language plpgsql;
+
+select check_booking();
 
 create or replace function add_passenger(varchar(30),varchar(30),varchar(30), pasp char(10),date) returns boolean as $$
 begin
