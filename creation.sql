@@ -90,8 +90,7 @@ create table if not exists booking(
   total_amount integer,
   time_limit timestamptz,
   contact_data text,
-  check(total_amount>0
-        and time_limit<now())
+  check(total_amount>0)
 );
 create table if not exists seat(
   id serial primary key,
