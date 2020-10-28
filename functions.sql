@@ -136,16 +136,21 @@ language plpgsql;
 create or replace function add_baggage(integer,real) returns void as $$
 begin
   insert into baggage(ticket_id, max_weight) values ($1,$2);
-  update ticket set amount=amount + $2*100;
+  update ticket set amount=amount + $2*100 where id=ticket_id;
 end; $$
 language plpgsql;
 --бронирование комнаты ожидания
 create or replace function relax_room_book(integer, room_class) returns void as $$
 begin
   insert into relax_room_booking(ticket_id, class) VALUES ($1,$2);
+  if $2='comfort' then
+ update ticket set amount=amount + 2000 where id=$1;
+ else if $2='comfort+' then
+ update ticket set amount=amount + 2500 where id=$1;
+ end if;end if;
 end; $$
 language plpgsql;
-
+select relax_room_book(1,'comfort');
 --забронировать билеты
 create or replace function to_book_trip(text, am integer) returns integer as $$
 declare idd integer;
