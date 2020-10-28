@@ -141,11 +141,18 @@ language plpgsql;
 
 select to_book_trip('rtghbjhhg',1);
 
-create or replace function to_cancel_ticket(passenger varchar(10),flight integer,seeat varchar(3)) returns void as $$
+create or replace function to_cancel_ticket(tic_id integer) returns void as $$
 begin
-delete from ticket where passenger_id=passenger and seat_id=(select id from seat where flight_id=flight and number=seeat);
+delete from ticket where id=tic_id;
 end;
 $$ language plpgsql;
+
+create or replace function to_change_flight_of_ticket(tic_id integer , new_flight integer,new__seat varchar(3)) returns void as $$
+begin
+update  ticket set seat_id=(select id from seat where number=new_seat and flight_id=new_flight) where id=tic_id;
+end;
+$$ language plpgsql;
+
 select to_cancel_ticket('1111112222',1,'A21');
 select create_ticket('1111112222',1,'A21','aaa','aaa','aaa','01-08-2000',77,1);
 
