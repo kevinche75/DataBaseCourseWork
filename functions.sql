@@ -1,3 +1,4 @@
+-- добавление полета
 CREATE OR REPLACE FUNCTION flight_insert() RETURNS trigger AS $$
     BEGIN
         NEW.actual_departure := NEW.schedule_departure;
@@ -5,10 +6,10 @@ CREATE OR REPLACE FUNCTION flight_insert() RETURNS trigger AS $$
         RETURN NEW;
     END;$$
 LANGUAGE plpgsql;
-
+--триггер
 CREATE TRIGGER flight_insert BEFORE INSERT ON flight FOR
 EACH ROW EXECUTE PROCEDURE flight_insert();
-
+--вывод свободных мест
 create or replace function get_number_available_seats(
     date_ date,
     departure_airport_ varchar(4),
@@ -36,9 +37,24 @@ create or replace function get_number_available_seats(
                 inner join available_seats_number a on a.flight_id = id;
     end; $$
     language plpgsql;
+--вывод свободных мест рейса
+    create or replace function get_available_seats(
+    flightId integer
+    ) returns table (
+        num varchar(3)
+        --class seat_class
+        ) as $$
+    begin
+        return query
+                select seat.number from seat
+                left join ticket t on seat.id = t.seat_id
+                where t.id is null;
 
+    end; $$
+    language plpgsql;
+select get_available_seats(1);
 select get_number_available_seats('1999-01-08', 'svo', 'led');
-
+--расчет стоимости билета
 create or replace function calc_ticket_price(
     flight_id int,
     seat_number varchar(3)
@@ -82,7 +98,7 @@ create or replace function calc_ticket_price(
 language plpgsql;
 
 select calc_ticket_price(1, 'A21');
-
+--удаление просроченных бронирований
 create or replace function check_booking() returns void as $$
     begin
         with delete_id as (
@@ -95,7 +111,7 @@ create or replace function check_booking() returns void as $$
 language plpgsql;
 
 select check_booking();
-
+--добавление пассажира
 create or replace function add_passenger(varchar(30),varchar(30),varchar(30), pasp char(10),date) returns boolean as $$
 begin
   if  (select true from  passenger where passport_no=$4) then return true; end if ;
@@ -104,32 +120,33 @@ begin
   return true;
 end; $$
 language plpgsql;
-
-create or replace function create_ticket( passport char(10),flight integer,seeat varchar(3),name varchar(30),secname varchar(30), thirdname varchar(30),dat date, amount integer, book integer) returns boolean as $$
+--создание билета
+create or replace function create_ticket( passport char(10),flightId integer,seeat varchar(3),name varchar(30),secname varchar(30), thirdname varchar(30),dat date, amount integer, book integer) returns boolean as $$
   begin
   if add_passenger(name,secname,thirdname,passport,dat) then
   insert into ticket (passenger_id,  seat_id, amount, book_id, registered)
-  values (passport,(select id from seat where number=seeat and seat.flight_id=flight), amount, book, false);
+  values (passport,(select id from seat where number=seeat and seat.flight_id=flightId), amount, book, false);
     end if;
     return true;
 end;$$
 language plpgsql;
 
 
-
+--добавление багажа
 create or replace function add_baggage(integer,real) returns void as $$
 begin
   insert into baggage(ticket_id, max_weight) values ($1,$2);
+  update ticket set amount=amount + $2*100;
 end; $$
 language plpgsql;
-
+--бронирование комнаты ожидания
 create or replace function relax_room_book(integer, room_class) returns void as $$
 begin
   insert into relax_room_booking(ticket_id, class) VALUES ($1,$2);
 end; $$
 language plpgsql;
 
-
+--забронировать билеты
 create or replace function to_book_trip(text, am integer) returns integer as $$
 declare idd integer;
 begin
@@ -140,13 +157,13 @@ end ;$$
 language plpgsql;
 
 select to_book_trip('rtghbjhhg',1);
-
+--отмена билета
 create or replace function to_cancel_ticket(tic_id integer) returns void as $$
 begin
 delete from ticket where id=tic_id;
 end;
 $$ language plpgsql;
-
+--смена рейса
 create or replace function to_change_flight_of_ticket(tic_id integer , new_flight integer,new__seat varchar(3)) returns void as $$
 begin
 update  ticket set seat_id=(select id from seat where number=new_seat and flight_id=new_flight) where id=tic_id;
