@@ -168,9 +168,9 @@ delete from ticket where id=tic_id;
 end;
 $$ language plpgsql;
 --смена рейса
-create or replace function to_change_flight_of_ticket(tic_id integer , new_flight integer,new__seat varchar(3)) returns void as $$
+create or replace function to_change_flight_of_ticket(tic_id integer , new_flight integer,new__seat varchar(3), am float) returns void as $$
 begin
-update  ticket set seat_id=(select id from seat where number=new_seat and flight_id=new_flight) where id=tic_id;
+update  ticket set seat_id=(select id from seat where number=new_seat and flight_id=new_flight), amount=am where id=tic_id;
 end;
 $$ language plpgsql;
 
