@@ -52,7 +52,7 @@ create or replace function get_number_available_seats(
 
     end; $$
     language plpgsql;
-select get_available_seats(1);
+
 select get_number_available_seats('1999-01-08', 'svo', 'led');
 --расчет стоимости билета
 create or replace function calc_ticket_price(
@@ -97,7 +97,6 @@ create or replace function calc_ticket_price(
     end; $$
 language plpgsql;
 
-select calc_ticket_price(1, 'A21');
 --удаление просроченных бронирований
 create or replace function check_booking() returns void as $$
     begin
@@ -110,7 +109,7 @@ create or replace function check_booking() returns void as $$
     end; $$
 language plpgsql;
 
-select check_booking();
+
 --добавление пассажира
 create or replace function add_passenger(varchar(30),varchar(30),varchar(30), pasp char(10),date) returns boolean as $$
 begin
@@ -136,7 +135,7 @@ language plpgsql;
 create or replace function add_baggage(integer,real) returns void as $$
 begin
   insert into baggage(ticket_id, max_weight) values ($1,$2);
-  update ticket set amount=amount + $2*100 where id=ticket_id;
+  update ticket set amount=amount + $2*100 where id=$1;
 end; $$
 language plpgsql;
 --бронирование комнаты ожидания
@@ -150,7 +149,7 @@ begin
  end if;end if;
 end; $$
 language plpgsql;
-select relax_room_book(1,'comfort');
+
 --забронировать билеты
 create or replace function to_book_trip(text, am integer) returns integer as $$
 declare idd integer;
@@ -161,7 +160,7 @@ begin
 end ;$$
 language plpgsql;
 
-select to_book_trip('rtghbjhhg',1);
+
 --отмена билета
 create or replace function to_cancel_ticket(tic_id integer) returns void as $$
 begin
@@ -175,6 +174,29 @@ update  ticket set seat_id=(select id from seat where number=new_seat and flight
 end;
 $$ language plpgsql;
 
+create or replace function registration(tic_id integer,reg boolean)returns void as $$
+
+begin
+update  ticket set registered=reg where id=tic_id;
+end;
+$$ language plpgsql
+
+create or replace function to_weigh(bag_id integer, tot_weight real) returns void as $$
+declare max_weight real=(select max_weight from baggage where id=bag_id);
+begin
+update baggage set total_weight=tot_weight, status='accept' where id=bag_id;
+if (max_weight<tot_weight ) then update ticket set amount=amount+100*(tot_weight-max_weight) where id=(select ticket_id from baggage where id=bag_id);
+end if;
+end;
+$$ language plpgsql
+select to_weigh(5,5);
+select registration(1,true);
+select get_available_seats(1);
+select calc_ticket_price(1, 'A21');
+select check_booking();
+select add_baggage(1,4);
+select relax_room_book(1,'comfort');
+select to_book_trip('rtghbjhhg',1);
 select to_cancel_ticket('1111112222',1,'A21');
 select create_ticket('1111112222',1,'A21','aaa','aaa','aaa','01-08-2000',77,1);
 
