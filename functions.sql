@@ -189,6 +189,12 @@ if (max_weight<tot_weight ) then update ticket set amount=amount+100*(tot_weight
 end if;
 end;
 $$ language plpgsql
+
+create or replace function change_passport(old_p varchar(10), new_p varchar(10)) returns void as $$
+begin
+update passenger set passport_no=new_p where passport_no=old_p;
+end;
+$$ language plpgsql
 select to_weigh(5,5);
 select registration(1,true);
 select get_available_seats(1);
@@ -196,7 +202,6 @@ select calc_ticket_price(1, 'A21');
 select check_booking();
 select add_baggage(1,4);
 select relax_room_book(1,'comfort');
-select to_book_trip('rtghbjhhg',1);
-select to_cancel_ticket('1111112222',1,'A21');
-select create_ticket('1111112222',1,'A21','aaa','aaa','aaa','01-08-2000',77,1);
+select to_cancel_ticket(1);
+select create_ticket('0000013058',1,'A21','aaa','aaa','aaa','01-08-2000',2,to_book_trip('rtghbjhhg',1));
 

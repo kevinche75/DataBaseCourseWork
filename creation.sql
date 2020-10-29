@@ -1,14 +1,14 @@
-create type comp_type as enum ('airport', 'cafe', 'cleaning', 'airline');
-create type flight_status as enum (
-  'scheduled', 'delayed',
-  'departed', 'in air',
-  'expected', 'diverted',
-  'recovery', 'landed',
-  'arrived', 'cancelled',
-  'no takeoff info', 'past flight');
-create type baggage_status as enum ('lost','accept','sent','returned');
-create type seat_class as enum('business','economy');
-create type room_class as enum('middle', 'comfort','comfort+');
+-- create type comp_type as enum ('airport', 'cafe', 'cleaning', 'airline');
+-- create type flight_status as enum (
+--   'scheduled', 'delayed',
+--   'departed', 'in air',
+--   'expected', 'diverted',
+--   'recovery', 'landed',
+--   'arrived', 'cancelled',
+--   'no takeoff info', 'past flight');
+-- create type baggage_status as enum ('lost','accept','sent','returned');
+-- create type seat_class as enum('business','economy');
+-- create type room_class as enum('middle', 'comfort','comfort+');
 
 create table if not exists company (
   name varchar(30) primary key,
@@ -102,13 +102,13 @@ create table if not exists seat(
 );
 create table if not exists ticket(
   id serial primary key,
-  passenger_id char(10) ,
+  passenger_id char(10),
   seat_id integer not null,
   amount float not null,
   book_id integer,
   registered boolean not null default false,
   foreign key(book_id) references booking(id),
-  foreign key(passenger_id) references passenger(passport_no) on delete set null ,
+  foreign key(passenger_id) references passenger(passport_no)on update cascade  on delete set null ,
   foreign key (seat_id) references seat(id) on delete cascade,
   check(amount>0)
 );
