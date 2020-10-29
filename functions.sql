@@ -41,12 +41,12 @@ create or replace function get_number_available_seats(
     create or replace function get_available_seats(
     flightId integer
     ) returns table (
-        num varchar(3)
-        --class seat_class
+        num varchar(3),
+        class seat_class
         ) as $$
     begin
         return query
-                select seat.number from seat
+                select seat.number, seat.class from seat
                 left join ticket t on seat.id = t.seat_id
                 where t.id is null;
 
