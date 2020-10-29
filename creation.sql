@@ -97,7 +97,7 @@ create table if not exists seat(
   number varchar(3) not null,
   flight_id integer not null,
   class seat_class not null,
-  foreign key(flight_id) references flight(id),
+  foreign key(flight_id) references flight(id) on delete cascade,
   check ( number ~ '[A-Z]{1}[0-9]{2}' )
 );
 create table if not exists ticket(
