@@ -106,7 +106,7 @@ create table if not exists ticket(
   seat_id integer not null,
   amount float not null,
   book_id integer,
-  registered boolean not null,
+  registered boolean not null default false,
   foreign key(book_id) references booking(id),
   foreign key(passenger_id) references passenger(passport_no) on delete set null ,
   foreign key (seat_id) references seat(id) on delete cascade,
