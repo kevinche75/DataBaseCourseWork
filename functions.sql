@@ -68,7 +68,12 @@ create or replace function calc_ticket_price(
         business_tax float = 1.1;
         result float;
     begin
-        with result_price as (
+        with owner as (
+            select owner_id
+            from flight
+            join aircraft a on a.id = flight.aircraft_id
+            where flight.id = flight_id
+        ), result_price as (
         select price::float*airport_tax as r_price, extract(day from f.schedule_departure - now()) as days, class
         from trip_price as t
         join flight f on
@@ -78,6 +83,7 @@ create or replace function calc_ticket_price(
             t.arrival_airport = f.departure_airport and
             t.departure_airport = f.arrival_airport
         join seat s on f.id = s.flight_id and s.number = seat_number
+        where t.company_name = owner.owner_id
             ), result_price_1 as (
             select result_price.class, result_price.r_price, case
                 when result_price.days > 30 then result_price.r_price*month_tax
