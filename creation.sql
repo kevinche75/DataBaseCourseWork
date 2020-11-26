@@ -140,7 +140,6 @@ primary key (company_name, departure_airport, arrival_airport, price)
 );
 
 create index on trip_price(company_name, departure_airport, arrival_airport);
-create index on flight(id);
 create index on passenger(name,second_name,third_name);
 create index on passenger using hash(passport_no);
 create index on ticket(amount);

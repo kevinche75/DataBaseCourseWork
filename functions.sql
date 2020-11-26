@@ -168,14 +168,13 @@ delete from ticket where id=tic_id;
 end;
 $$ language plpgsql;
 --смена рейса
-create or replace function to_change_flight_of_ticket(tic_id integer , new_flight integer,new__seat varchar(3), am float) returns void as $$
+create or replace function to_change_flight_of_ticket(tic_id integer , new_flight integer,new_seat varchar(3), am float) returns void as $$
 begin
 update  ticket set seat_id=(select id from seat where number=new_seat and flight_id=new_flight), amount=am where id=tic_id;
 end;
 $$ language plpgsql;
 
 create or replace function registration(tic_id integer,reg boolean)returns void as $$
-
 begin
 update  ticket set registered=reg where id=tic_id;
 end;
@@ -198,7 +197,7 @@ $$ language plpgsql
 
 create or replace function to_delay(flId integer, interval ) returns void as $$
 begin
-update flight set actual_departure=actual_departure+'2 hour' where id=1;
+update flight set actual_departure=actual_departure+$2 where id=$1;
 end;
 $$ language plpgsql
 select to_weigh(5,5);
@@ -206,6 +205,7 @@ select registration(1,true);
 select get_available_seats(1);
 select calc_ticket_price(1, 'A21');
 select check_booking();
+select add_baggage(481,4);
 select add_baggage(1,4);
 select relax_room_book(1,'comfort');
 select to_cancel_ticket(1);
