@@ -1,0 +1,1718 @@
+<tbody>
+          <tr class="odd views-row-first">
+                  <td class="views-field views-field-counter">
+            1.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Анапа          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/aaq" title=" аэропорт Витязево, AAQ (Россия, ICAO код: URKA)">Витязево</a>          </td>
+                  <td class="views-field views-field-title-3">
+            AAQ          </td>
+                  <td class="views-field views-field-field-icao">
+            URKA          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            2.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Абакан          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/aba" title=" аэропорт Абакан, ABA (Россия, ICAO код: UNAA)">Абакан</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ABA          </td>
+                  <td class="views-field views-field-field-icao">
+            UNAA          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            3.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ачинск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/acs" title=" аэропорт Ачинск, ACS (Россия, ICAO код: UNKS)">Ачинск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ACS          </td>
+                  <td class="views-field views-field-field-icao">
+            UNKS          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            4.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Алдан          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/adh" title=" аэропорт Алдан, ADH (Россия, ICAO код: UEEA)">Алдан</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ADH          </td>
+                  <td class="views-field views-field-field-icao">
+            UEEA          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            5.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Адлер          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/aer" title=" аэропорт Адлер - Сочи, AER (Россия, ICAO код: URSS)">Адлер - Сочи</a>          </td>
+                  <td class="views-field views-field-title-3">
+            AER          </td>
+                  <td class="views-field views-field-field-icao">
+            URSS          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            6.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Амдерма          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/amv" title=" аэропорт Амдерма, AMV (Россия, ICAO код: ULDD)">Амдерма</a>          </td>
+                  <td class="views-field views-field-title-3">
+            AMV          </td>
+                  <td class="views-field views-field-field-icao">
+            ULDD          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            7.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Архангельск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/arh" title=" аэропорт Талаги, ARH (Россия, ICAO код: ULAA)">Талаги</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ARH          </td>
+                  <td class="views-field views-field-field-icao">
+            ULAA          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            8.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Астрахань          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/asf" title=" аэропорт Астрахань, ASF (Россия, ICAO код: URWA)">Астрахань</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ASF          </td>
+                  <td class="views-field views-field-field-icao">
+            URWA          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            9.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Барнаул          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/bax" title=" аэропорт Барнаул, BAX (Россия, ICAO код: UNBB)">Барнаул</a>          </td>
+                  <td class="views-field views-field-title-3">
+            BAX          </td>
+                  <td class="views-field views-field-field-icao">
+            UNBB          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            10.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Белорецк          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/bcx" title=" аэропорт Белорецк, BCX (Россия, ICAO код: UWUB)">Белорецк</a>          </td>
+                  <td class="views-field views-field-title-3">
+            BCX          </td>
+                  <td class="views-field views-field-field-icao">
+            UWUB          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            11.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Москва          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/bka" title=" аэропорт Быково, BKA (Россия, ICAO код: UUBB)">Быково</a>          </td>
+                  <td class="views-field views-field-title-3">
+            BKA          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBB          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            12.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Москва          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vko" title=" аэропорт Внуково, VKO (Россия, ICAO код: UUWW)">Внуково</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VKO          </td>
+                  <td class="views-field views-field-field-icao">
+            UUWW          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            13.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Москва          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/svo" title=" аэропорт Шереметьево, SVO (Россия, ICAO код: UUEE)">Шереметьево</a>          </td>
+                  <td class="views-field views-field-title-3">
+            SVO          </td>
+                  <td class="views-field views-field-field-icao">
+            UUEE          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            14.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Москва          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/dme" title=" аэропорт Домодедово, DME (Россия, ICAO код: UUDD)">Домодедово</a>          </td>
+                  <td class="views-field views-field-title-3">
+            DME          </td>
+                  <td class="views-field views-field-field-icao">
+            UUDD          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            15.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Благовещенск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/bqs" title=" аэропорт Игнатьево, BQS (Россия, ICAO код: UHBB)">Игнатьево</a>          </td>
+                  <td class="views-field views-field-title-3">
+            BQS          </td>
+                  <td class="views-field views-field-field-icao">
+            UHBB          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            16.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Братск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/btk" title=" аэропорт Братск, BTK (Россия, ICAO код: UIBB)">Братск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            BTK          </td>
+                  <td class="views-field views-field-field-icao">
+            UIBB          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            17.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Балаково          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/bwo" title=" аэропорт Балаково, BWO (Россия, ICAO код: UWSB)">Балаково</a>          </td>
+                  <td class="views-field views-field-title-3">
+            BWO          </td>
+                  <td class="views-field views-field-field-icao">
+            UWSB          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            18.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Брянск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/bzk" title=" аэропорт Брянск, BZK (Россия, ICAO код: UUBP)">Брянск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            BZK          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBP          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            19.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Череповец          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/cee" title=" аэропорт Череповец, CEE (Россия, ICAO код: ULBC)">Череповец</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CEE          </td>
+                  <td class="views-field views-field-field-icao">
+            ULBC          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            20.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Челябинск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/cek" title=" аэропорт Челябинск, CEK (Россия, ICAO код: USCC)">Челябинск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CEK          </td>
+                  <td class="views-field views-field-field-icao">
+            USCC          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            21.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Чокурдах          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ckh" title=" аэропорт Чокурдах, CKH (Россия, ICAO код: UESO)">Чокурдах</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CKH          </td>
+                  <td class="views-field views-field-field-icao">
+            UESO          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            22.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Чкаловский          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ckl" title=" аэропорт Чкаловский, CKL (Россия, ICAO код: HRYR)">Чкаловский</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CKL          </td>
+                  <td class="views-field views-field-field-icao">
+            HRYR          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            23.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Чульман          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/cnn" title=" аэропорт Чульман, CNN (Россия, ICAO код: UELL)">Чульман</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CNN          </td>
+                  <td class="views-field views-field-field-icao">
+            UELL          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            24.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Соловецкий          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/csh" title=" аэропорт Solovky, CSH (Россия, ICAO код: ULAS)">Solovky</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CSH          </td>
+                  <td class="views-field views-field-field-icao">
+            ULAS          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            25.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Чебоксары          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/csy" title=" аэропорт Чебоксары, CSY (Россия, ICAO код: UWKS)">Чебоксары</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CSY          </td>
+                  <td class="views-field views-field-field-icao">
+            UWKS          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            26.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Черский          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/cyx" title=" аэропорт Якут, CYX (Россия, ICAO код: UESS)">Якут</a>          </td>
+                  <td class="views-field views-field-title-3">
+            CYX          </td>
+                  <td class="views-field views-field-field-icao">
+            UESS          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            27.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Диксон          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/dks" title=" аэропорт Диксон, DKS (Россия, ICAO код: UODD)">Диксон</a>          </td>
+                  <td class="views-field views-field-title-3">
+            DKS          </td>
+                  <td class="views-field views-field-field-icao">
+            UODD          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            28.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Анадырь          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/dyr" title=" аэропорт Угольный, DYR (Россия, ICAO код: UHMA)">Угольный</a>          </td>
+                  <td class="views-field views-field-title-3">
+            DYR          </td>
+                  <td class="views-field views-field-field-icao">
+            UHMA          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            29.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Белгород          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ego" title=" аэропорт Белгород, EGO (Россия, ICAO код: UUOB)">Белгород</a>          </td>
+                  <td class="views-field views-field-title-3">
+            EGO          </td>
+                  <td class="views-field views-field-field-icao">
+            UUOB          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            30.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Енисейск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/eie" title=" аэропорт Енисейск, EIE (Россия, ICAO код: UNII)">Енисейск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            EIE          </td>
+                  <td class="views-field views-field-field-icao">
+            UNII          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            31.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Элиста          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/esl" title=" аэропорт Элиста, ESL (Россия, ICAO код: URWI)">Элиста</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ESL          </td>
+                  <td class="views-field views-field-field-icao">
+            URWI          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            32.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Магдагачи          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/gdg" title=" аэропорт Магдагачи, GDG (Россия, ICAO код: UHBI)">Магдагачи</a>          </td>
+                  <td class="views-field views-field-title-3">
+            GDG          </td>
+                  <td class="views-field views-field-field-icao">
+            UHBI          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            33.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Магадан          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/gdx" title=" аэропорт Сокол, GDX (Россия, ICAO код: UHMM)">Сокол</a>          </td>
+                  <td class="views-field views-field-title-3">
+            GDX          </td>
+                  <td class="views-field views-field-field-icao">
+            UHMM          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            34.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Геленджик          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/gdz" title=" аэропорт Геленджик, GDZ (Россия, ICAO код: URKG)">Геленджик</a>          </td>
+                  <td class="views-field views-field-title-3">
+            GDZ          </td>
+                  <td class="views-field views-field-field-icao">
+            URKG          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            35.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Нижний Новгород          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/goj" title=" аэропорт Нижний Новгород, GOJ (Россия, ICAO код: UWGG)">Нижний Новгород</a>          </td>
+                  <td class="views-field views-field-title-3">
+            GOJ          </td>
+                  <td class="views-field views-field-field-icao">
+            UWGG          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            36.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Грозный          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/grv" title=" аэропорт Грозный, GRV (Россия, ICAO код: URMG)">Грозный</a>          </td>
+                  <td class="views-field views-field-title-3">
+            GRV          </td>
+                  <td class="views-field views-field-field-icao">
+            URMG          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            37.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ханты-Мансийск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/hma" title=" аэропорт Ханты-Мансийск, HMA (Россия, ICAO код: HKHB)">Ханты-Мансийск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            HMA          </td>
+                  <td class="views-field views-field-field-icao">
+            HKHB          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            38.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Чита          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/hta" title=" аэропорт Чита, HTA (Россия, ICAO код: UIAA)">Чита</a>          </td>
+                  <td class="views-field views-field-title-3">
+            HTA          </td>
+                  <td class="views-field views-field-field-icao">
+            UIAA          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            39.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Хатанга          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/htg" title=" аэропорт Хатанга, HTG (Россия, ICAO код: UOHH)">Хатанга</a>          </td>
+                  <td class="views-field views-field-title-3">
+            HTG          </td>
+                  <td class="views-field views-field-field-icao">
+            UOHH          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            40.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Игарка          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/iaa" title=" аэропорт Игарка, IAA (Россия, ICAO код: UOII)">Игарка</a>          </td>
+                  <td class="views-field views-field-title-3">
+            IAA          </td>
+                  <td class="views-field views-field-field-icao">
+            UOII          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            41.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ярославль          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/iar" title=" аэропорт Туношна, IAR (Россия, ICAO код: UUDL)">Туношна</a>          </td>
+                  <td class="views-field views-field-title-3">
+            IAR          </td>
+                  <td class="views-field views-field-field-icao">
+            UUDL          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            42.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ижевск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ijk" title=" аэропорт Ижевск, IJK (Россия, ICAO код: USII)">Ижевск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            IJK          </td>
+                  <td class="views-field views-field-field-icao">
+            USII          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            43.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Тикси          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/iks" title=" аэропорт Тикси, IKS (Россия, ICAO код: UEST)">Тикси</a>          </td>
+                  <td class="views-field views-field-title-3">
+            IKS          </td>
+                  <td class="views-field views-field-field-icao">
+            UEST          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            44.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Иркутск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ikt" title=" аэропорт Иркутск, IKT (Россия, ICAO код: UIII)">Иркутск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            IKT          </td>
+                  <td class="views-field views-field-field-icao">
+            UIII          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            45.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Инта          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ina" title=" аэропорт Инта, INA (Россия, ICAO код: UUYI)">Инта</a>          </td>
+                  <td class="views-field views-field-title-3">
+            INA          </td>
+                  <td class="views-field views-field-field-icao">
+            UUYI          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            46.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Иваново          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/iwa" title=" аэропорт Иваново, IWA (Россия, ICAO код: UUBI)">Иваново</a>          </td>
+                  <td class="views-field views-field-title-3">
+            IWA          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBI          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            47.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Йошкар-Ола          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/jok" title=" аэропорт Йошкар-Ола, JOK (Россия, ICAO код: UWKJ)">Йошкар-Ола</a>          </td>
+                  <td class="views-field views-field-title-3">
+            JOK          </td>
+                  <td class="views-field views-field-field-icao">
+            UWKJ          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            48.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Кемерово          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kej" title=" аэропорт Кемерово, KEJ (Россия, ICAO код: UNEE)">Кемерово</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KEJ          </td>
+                  <td class="views-field views-field-field-icao">
+            UNEE          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            49.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Калининград          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kgd" title=" аэропорт Калининград, KGD (Россия, ICAO код: UMKK)">Калининград</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KGD          </td>
+                  <td class="views-field views-field-field-icao">
+            UMKK          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            50.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Когалым          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kgp" title=" аэропорт Когалым, KGP (Россия, ICAO код: USRK)">Когалым</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KGP          </td>
+                  <td class="views-field views-field-field-icao">
+            USRK          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            51.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Хабаровск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/khv" title=" аэропорт Новый, KHV (Россия, ICAO код: UHHH)">Новый</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KHV          </td>
+                  <td class="views-field views-field-field-icao">
+            UHHH          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            52.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Красноярск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kja" title=" аэропорт Емельяново, KJA (Россия, ICAO код: UNKL)">Емельяново</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KJA          </td>
+                  <td class="views-field views-field-field-icao">
+            UNKL          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            53.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Тверь          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kld" title=" аэропорт Мигалово, KLD (Россия, ICAO код: UUEM)">Мигалово</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KLD          </td>
+                  <td class="views-field views-field-field-icao">
+            UUEM          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            54.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Калуга          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/klf" title=" аэропорт Калуга, KLF (Россия, ICAO код: UUBC)">Калуга</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KLF          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBC          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            55.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Кострома          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kmw" title=" аэропорт Кострома, KMW (Россия, ICAO код: UUBA)">Кострома</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KMW          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBA          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            56.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Курган          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kro" title=" аэропорт Курган, KRO (Россия, ICAO код: USUU)">Курган</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KRO          </td>
+                  <td class="views-field views-field-field-icao">
+            USUU          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            57.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Краснодар          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/krr" title=" аэропорт Пашковский, KRR (Россия, ICAO код: URKK)">Пашковский</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KRR          </td>
+                  <td class="views-field views-field-field-icao">
+            URKK          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            58.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Котлас          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ksz" title=" аэропорт Котлас, KSZ (Россия, ICAO код: ULKK)">Котлас</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KSZ          </td>
+                  <td class="views-field views-field-field-icao">
+            ULKK          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            59.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Самара          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kuf" title=" аэропорт Курумоч, KUF (Россия, ICAO код: UWWW)">Курумоч</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KUF          </td>
+                  <td class="views-field views-field-field-icao">
+            UWWW          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            60.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Кировск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kvk" title=" аэропорт Кировск, KVK (Россия, ICAO код: ULMK)">Кировск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KVK          </td>
+                  <td class="views-field views-field-field-icao">
+            ULMK          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            61.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Киров          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kvx" title=" аэропорт Киров, KVX (Россия, ICAO код: USKK)">Киров</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KVX          </td>
+                  <td class="views-field views-field-field-icao">
+            USKK          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            62.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Комсомольск на Амуре          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kxk" title=" аэропорт Комсомольск на Амуре, KXK (Россия, ICAO код: UHKK)">Комсомольск на Амуре</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KXK          </td>
+                  <td class="views-field views-field-field-icao">
+            UHKK          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            63.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Кызыл          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kyz" title=" аэропорт Кызыл, KYZ (Россия, ICAO код: UNKY)">Кызыл</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KYZ          </td>
+                  <td class="views-field views-field-field-icao">
+            UNKY          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            64.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Казань          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/kzn" title=" аэропорт Казань, KZN (Россия, ICAO код: UWKD)">Казань</a>          </td>
+                  <td class="views-field views-field-title-3">
+            KZN          </td>
+                  <td class="views-field views-field-field-icao">
+            UWKD          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            65.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Лешуконское          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ldg" title=" аэропорт Leshukonskoye, LDG (Россия, ICAO код: TAPT)">Leshukonskoye</a>          </td>
+                  <td class="views-field views-field-title-3">
+            LDG          </td>
+                  <td class="views-field views-field-field-icao">
+            TAPT          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            66.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Санкт-Петербург          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/led" title=" аэропорт Пулково, LED (Россия, ICAO код: ULLI)">Пулково</a>          </td>
+                  <td class="views-field views-field-title-3">
+            LED          </td>
+                  <td class="views-field views-field-field-icao">
+            ULLI          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            67.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Санкт-Петербург          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/rvh" title=" аэропорт Ржевка, RVH (Россия, ICAO код: ULSS)">Ржевка</a>          </td>
+                  <td class="views-field views-field-title-3">
+            RVH          </td>
+                  <td class="views-field views-field-field-icao">
+            ULSS          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            68.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Смоленск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/lnx" title=" аэропорт Смоленск, LNX (Россия, ICAO код: UUBS)">Смоленск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            LNX          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBS          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            69.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Липецк          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/lpk" title=" аэропорт Липецк, LPK (Россия, ICAO код: UUOL)">Липецк</a>          </td>
+                  <td class="views-field views-field-title-3">
+            LPK          </td>
+                  <td class="views-field views-field-field-icao">
+            UUOL          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            70.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Махачкала          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/mcx" title=" аэропорт Уйташ, MCX (Россия, ICAO код: URML)">Уйташ</a>          </td>
+                  <td class="views-field views-field-title-3">
+            MCX          </td>
+                  <td class="views-field views-field-field-icao">
+            URML          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            71.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Мирный          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/mjz" title=" аэропорт Мирный, MJZ (Россия, ICAO код: UERR)">Мирный</a>          </td>
+                  <td class="views-field views-field-title-3">
+            MJZ          </td>
+                  <td class="views-field views-field-field-icao">
+            UERR          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            72.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Мурманск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/mmk" title=" аэропорт Мурманск, MMK (Россия, ICAO код: ULMM)">Мурманск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            MMK          </td>
+                  <td class="views-field views-field-field-icao">
+            ULMM          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            73.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Магнитогорск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/mqf" title=" аэропорт Магнитогорск, MQF (Россия, ICAO код: USCM)">Магнитогорск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            MQF          </td>
+                  <td class="views-field views-field-field-icao">
+            USCM          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            74.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Минеральные Воды          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/mrv" title=" аэропорт Минеральные Воды, MRV (Россия, ICAO код: URMM)">Минеральные Воды</a>          </td>
+                  <td class="views-field views-field-title-3">
+            MRV          </td>
+                  <td class="views-field views-field-field-icao">
+            URMM          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            75.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Нальчик          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nal" title=" аэропорт Нальчик, NAL (Россия, ICAO код: URMN)">Нальчик</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NAL          </td>
+                  <td class="views-field views-field-field-icao">
+            URMN          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            76.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Набережные Челны          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nbc" title=" аэропорт Набережные Челны, NBC (Россия, ICAO код: UWKE)">Набережные Челны</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NBC          </td>
+                  <td class="views-field views-field-field-icao">
+            UWKE          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            77.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Нефтекамск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nef" title=" аэропорт Нефтекамск, NEF (Россия, ICAO код: UWUF)">Нефтекамск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NEF          </td>
+                  <td class="views-field views-field-field-icao">
+            UWUF          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            78.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Нерюнгри          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ner" title=" аэропорт Нерюнгри, NER (Россия, ICAO код: UELL)">Нерюнгри</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NER          </td>
+                  <td class="views-field views-field-field-icao">
+            UELL          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            79.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Нефтеюганск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nfg" title=" аэропорт Нефтеюганск, NFG (Россия, ICAO код: USRN)">Нефтеюганск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NFG          </td>
+                  <td class="views-field views-field-field-icao">
+            USRN          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            80.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Нижневартовск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/njc" title=" аэропорт Нижневартовск, NJC (Россия, ICAO код: USNN)">Нижневартовск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NJC          </td>
+                  <td class="views-field views-field-field-icao">
+            USNN          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            81.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Нарьян-Мар          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nnm" title=" аэропорт Нарян-Мар, NNM (Россия, ICAO код: ULAM)">Нарян-Мар</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NNM          </td>
+                  <td class="views-field views-field-field-icao">
+            ULAM          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            82.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Новороссийск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/noi" title=" аэропорт Крымск, NOI (Россия)">Крымск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NOI          </td>
+                  <td class="views-field views-field-field-icao">
+                      </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            83.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ноябрьск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/noj" title=" аэропорт Ноябрьск, NOJ (Россия, ICAO код: USRO)">Ноябрьск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NOJ          </td>
+                  <td class="views-field views-field-field-icao">
+            USRO          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            84.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Новокузнецк          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/noz" title=" аэропорт Новокузнецк, NOZ (Россия, ICAO код: UNWW)">Новокузнецк</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NOZ          </td>
+                  <td class="views-field views-field-field-icao">
+            UNWW          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            85.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Новый Уренгой          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nux" title=" аэропорт Новый Уренгой, NUX (Россия, ICAO код: USMU)">Новый Уренгой</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NUX          </td>
+                  <td class="views-field views-field-field-icao">
+            USMU          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            86.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Новгород          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nvr" title=" аэропорт Новогород, NVR (Россия, ICAO код: ULNN)">Новогород</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NVR          </td>
+                  <td class="views-field views-field-field-icao">
+            ULNN          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            87.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Надым          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/nym" title=" аэропорт Надым, NYM (Россия, ICAO код: USMM)">Надым</a>          </td>
+                  <td class="views-field views-field-title-3">
+            NYM          </td>
+                  <td class="views-field views-field-field-icao">
+            USMM          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            88.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Орел          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/oel" title=" аэропорт Орел, OEL (Россия, ICAO код: UUOR)">Орел</a>          </td>
+                  <td class="views-field views-field-title-3">
+            OEL          </td>
+                  <td class="views-field views-field-field-icao">
+            UUOR          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            89.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Владикавказ          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ogz" title=" аэропорт Владикавказ, OGZ (Россия, ICAO код: URMO)">Владикавказ</a>          </td>
+                  <td class="views-field views-field-title-3">
+            OGZ          </td>
+                  <td class="views-field views-field-field-icao">
+            URMO          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            90.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Охотск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/oho" title=" аэропорт Охотск, OHO (Россия, ICAO код: UHOO)">Охотск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            OHO          </td>
+                  <td class="views-field views-field-field-icao">
+            UHOO          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            91.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Октябрьский          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/okt" title=" аэропорт Октябрьский, OKT (Россия, ICAO код: UWUK)">Октябрьский</a>          </td>
+                  <td class="views-field views-field-title-3">
+            OKT          </td>
+                  <td class="views-field views-field-field-icao">
+            UWUK          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            92.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Омск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/oms" title=" аэропорт Омск, OMS (Россия, ICAO код: UNOO)">Омск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            OMS          </td>
+                  <td class="views-field views-field-field-icao">
+            UNOO          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            93.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Орск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/osw" title=" аэропорт Орск, OSW (Россия, ICAO код: UWOR)">Орск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            OSW          </td>
+                  <td class="views-field views-field-field-icao">
+            UWOR          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            94.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Новосибирск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ovb" title=" аэропорт Толмачево, OVB (Россия, ICAO код: UNNT)">Толмачево</a>          </td>
+                  <td class="views-field views-field-title-3">
+            OVB          </td>
+                  <td class="views-field views-field-field-icao">
+            UNNT          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            95.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Пермь          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pee" title=" аэропорт Пермь, PEE (Россия, ICAO код: USPP)">Пермь</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PEE          </td>
+                  <td class="views-field views-field-field-icao">
+            USPP          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            96.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Петрозаводск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pes" title=" аэропорт Петрозаводск, PES (Россия, ICAO код: ULPB)">Петрозаводск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PES          </td>
+                  <td class="views-field views-field-field-icao">
+            ULPB          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            97.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Печора          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pex" title=" аэропорт Печора, PEX (Россия, ICAO код: UUYP)">Печора</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PEX          </td>
+                  <td class="views-field views-field-field-icao">
+            UUYP          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            98.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Пенза          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pez" title=" аэропорт Пенза, PEZ (Россия, ICAO код: UWPP)">Пенза</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PEZ          </td>
+                  <td class="views-field views-field-field-icao">
+            UWPP          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            99.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Петропавловск-Камчатский          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pkc" title=" аэропорт Елизово, PKC (Россия, ICAO код: UHPP)">Елизово</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PKC          </td>
+                  <td class="views-field views-field-field-icao">
+            UHPP          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            100.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Псков          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pkv" title=" аэропорт Псков, PKV (Россия, ICAO код: ULOO)">Псков</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PKV          </td>
+                  <td class="views-field views-field-field-icao">
+            ULOO          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            101.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Бухта Провидения          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pvs" title=" аэропорт Проведения, PVS (Россия, ICAO код: UHMD)">Проведения</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PVS          </td>
+                  <td class="views-field views-field-field-icao">
+            UHMD          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            102.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Бухта Провидения          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pvx" title=" аэропорт Проведения, PVX (Россия, ICAO код: UHMD)">Проведения</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PVX          </td>
+                  <td class="views-field views-field-field-icao">
+            UHMD          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            103.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Певек          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pwe" title=" аэропорт Певек, PWE (Россия, ICAO код: UHMP)">Певек</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PWE          </td>
+                  <td class="views-field views-field-field-icao">
+            UHMP          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            104.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Полярный          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/pyj" title=" аэропорт Полярный, PYJ (Россия, ICAO код: UERP)">Полярный</a>          </td>
+                  <td class="views-field views-field-title-3">
+            PYJ          </td>
+                  <td class="views-field views-field-field-icao">
+            UERP          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            105.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Радужный          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/rat" title=" аэропорт Радужный, RAT (Россия, ICAO код: USNR)">Радужный</a>          </td>
+                  <td class="views-field views-field-title-3">
+            RAT          </td>
+                  <td class="views-field views-field-field-icao">
+            USNR          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            106.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Оренбург          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ren" title=" аэропорт Оренбург, REN (Россия, ICAO код: UWOO)">Оренбург</a>          </td>
+                  <td class="views-field views-field-title-3">
+            REN          </td>
+                  <td class="views-field views-field-field-icao">
+            UWOO          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            107.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ростов          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/rov" title=" аэропорт Ростов-на-Дону, ROV (Россия, ICAO код: URRR)">Ростов-на-Дону</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ROV          </td>
+                  <td class="views-field views-field-field-icao">
+            URRR          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            108.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Саратов          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/rtw" title=" аэропорт Саратов, RTW (Россия, ICAO код: UWSS)">Саратов</a>          </td>
+                  <td class="views-field views-field-title-3">
+            RTW          </td>
+                  <td class="views-field views-field-field-icao">
+            UWSS          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            109.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Рыбинск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ryb" title=" аэропорт Рыбинск, RYB (Россия, ICAO код: UUBK)">Рыбинск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            RYB          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBK          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            110.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Рязань          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/rzn" title=" аэропорт Турлатово, RZN (Россия, ICAO код: UUWR)">Турлатово</a>          </td>
+                  <td class="views-field views-field-title-3">
+            RZN          </td>
+                  <td class="views-field views-field-field-icao">
+            UUWR          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            111.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Сыктывкар          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/scw" title=" аэропорт Сыктывкар, SCW (Россия, ICAO код: UUYY)">Сыктывкар</a>          </td>
+                  <td class="views-field views-field-title-3">
+            SCW          </td>
+                  <td class="views-field views-field-field-icao">
+            UUYY          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            112.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Сургут          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/sgc" title=" аэропорт Сургут, SGC (Россия, ICAO код: USRR)">Сургут</a>          </td>
+                  <td class="views-field views-field-title-3">
+            SGC          </td>
+                  <td class="views-field views-field-field-icao">
+            USRR          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            113.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Саранск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/skx" title=" аэропорт Саранск, SKX (Россия, ICAO код: UWPS)">Саранск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            SKX          </td>
+                  <td class="views-field views-field-field-icao">
+            UWPS          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            114.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Салехард          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/sly" title=" аэропорт Салехард, SLY (Россия, ICAO код: USDD)">Салехард</a>          </td>
+                  <td class="views-field views-field-title-3">
+            SLY          </td>
+                  <td class="views-field views-field-field-icao">
+            USDD          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            115.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ставрополь          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/stw" title=" аэропорт Ставрополь, STW (Россия, ICAO код: URMT)">Ставрополь</a>          </td>
+                  <td class="views-field views-field-title-3">
+            STW          </td>
+                  <td class="views-field views-field-field-icao">
+            URMT          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            116.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Екатеринбург          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/svx" title=" аэропорт Кольцово, SVX (Россия, ICAO код: USSS)">Кольцово</a>          </td>
+                  <td class="views-field views-field-title-3">
+            SVX          </td>
+                  <td class="views-field views-field-field-icao">
+            USSS          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            117.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Стрежевой          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/swt" title=" аэропорт Стрежевой, SWT (Россия, ICAO код: UNSS)">Стрежевой</a>          </td>
+                  <td class="views-field views-field-title-3">
+            SWT          </td>
+                  <td class="views-field views-field-field-icao">
+            UNSS          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            118.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Тамбов          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/tbw" title=" аэропорт Тамбов, TBW (Россия, ICAO код: UUOT)">Тамбов</a>          </td>
+                  <td class="views-field views-field-title-3">
+            TBW          </td>
+                  <td class="views-field views-field-field-icao">
+            UUOT          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            119.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Тюмень          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/tjm" title=" аэропорт Рощино, TJM (Россия, ICAO код: USTR)">Рощино</a>          </td>
+                  <td class="views-field views-field-title-3">
+            TJM          </td>
+                  <td class="views-field views-field-field-icao">
+            USTR          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            120.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Томск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/tof" title=" аэропорт Богашево, TOF (Россия, ICAO код: UNTT)">Богашево</a>          </td>
+                  <td class="views-field views-field-title-3">
+            TOF          </td>
+                  <td class="views-field views-field-field-icao">
+            UNTT          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            121.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Тобольск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/tox" title=" аэропорт Тобольск, TOX (Россия, ICAO код: USTO)">Тобольск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            TOX          </td>
+                  <td class="views-field views-field-field-icao">
+            USTO          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            122.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Тула          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/tya" title=" аэропорт Тула, TYA (Россия, ICAO код: UUBT)">Тула</a>          </td>
+                  <td class="views-field views-field-title-3">
+            TYA          </td>
+                  <td class="views-field views-field-field-icao">
+            UUBT          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            123.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Тында          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/tyd" title=" аэропорт Тында, TYD (Россия, ICAO код: UHBW)">Тында</a>          </td>
+                  <td class="views-field views-field-title-3">
+            TYD          </td>
+                  <td class="views-field views-field-field-icao">
+            UHBW          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            124.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ухта          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/uct" title=" аэропорт Ухта, UCT (Россия, ICAO код: UUYH)">Ухта</a>          </td>
+                  <td class="views-field views-field-title-3">
+            UCT          </td>
+                  <td class="views-field views-field-field-icao">
+            UUYH          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            125.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Уфа          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ufa" title=" аэропорт Уфа, UFA (Россия, ICAO код: UWUU)">Уфа</a>          </td>
+                  <td class="views-field views-field-title-3">
+            UFA          </td>
+                  <td class="views-field views-field-field-icao">
+            UWUU          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            126.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Усть-Илимск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/uik" title=" аэропорт Усть-Ильимск, UIK (Россия, ICAO код: UIBS)">Усть-Ильимск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            UIK          </td>
+                  <td class="views-field views-field-field-icao">
+            UIBS          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            127.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Усть-Кут          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/ukx" title=" аэропорт Усть-Кут, UKX (Россия, ICAO код: UITT)">Усть-Кут</a>          </td>
+                  <td class="views-field views-field-title-3">
+            UKX          </td>
+                  <td class="views-field views-field-field-icao">
+            UITT          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            128.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Ульяновск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/uly" title=" аэропорт Восточный, ULY (Россия, ICAO код: UWLW)">Восточный</a>          </td>
+                  <td class="views-field views-field-title-3">
+            ULY          </td>
+                  <td class="views-field views-field-field-icao">
+            UWLW          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            129.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Урай          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/urj" title=" аэропорт Урай, URJ (Россия, ICAO код: USHU)">Урай</a>          </td>
+                  <td class="views-field views-field-title-3">
+            URJ          </td>
+                  <td class="views-field views-field-field-icao">
+            USHU          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            130.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Курск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/urs" title=" аэропорт Курск, URS (Россия, ICAO код: UUOK)">Курск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            URS          </td>
+                  <td class="views-field views-field-field-icao">
+            UUOK          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            131.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Усинск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/usk" title=" аэропорт Усинск, USK (Россия, ICAO код: UUYS)">Усинск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            USK          </td>
+                  <td class="views-field views-field-field-icao">
+            UUYS          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            132.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Бугульма          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/uua" title=" аэропорт Бугульма, UUA (Россия, ICAO код: UWKB)">Бугульма</a>          </td>
+                  <td class="views-field views-field-title-3">
+            UUA          </td>
+                  <td class="views-field views-field-field-icao">
+            UWKB          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            133.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Улан-Удэ          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/uud" title=" аэропорт Мухино, UUD (Россия, ICAO код: UIUU)">Мухино</a>          </td>
+                  <td class="views-field views-field-title-3">
+            UUD          </td>
+                  <td class="views-field views-field-field-icao">
+            UIUU          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            134.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Южно-Сахалинск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/uus" title=" аэропорт Южно-Сахалинск, UUS (Россия, ICAO код: UHSS)">Южно-Сахалинск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            UUS          </td>
+                  <td class="views-field views-field-field-icao">
+            UHSS          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            135.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Вологда          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vgd" title=" аэропорт Вологда, VGD (Россия, ICAO код: ULWW)">Вологда</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VGD          </td>
+                  <td class="views-field views-field-field-icao">
+            ULWW          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            136.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Воркута          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vkt" title=" аэропорт Воркута, VKT (Россия, ICAO код: UUYW)">Воркута</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VKT          </td>
+                  <td class="views-field views-field-field-icao">
+            UUYW          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            137.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Волгодонск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vlk" title=" аэропорт Волгодонск, VLK (Россия, ICAO код: URRY)">Волгодонск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VLK          </td>
+                  <td class="views-field views-field-field-icao">
+            URRY          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            138.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Великие Луки          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vlu" title=" аэропорт Великие Луки, VLU (Россия, ICAO код: ULOL)">Великие Луки</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VLU          </td>
+                  <td class="views-field views-field-field-icao">
+            ULOL          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            139.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Волгоград          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vog" title=" аэропорт Волгоград, VOG (Россия, ICAO код: URWW)">Волгоград</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VOG          </td>
+                  <td class="views-field views-field-field-icao">
+            URWW          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            140.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Воронеж          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/voz" title=" аэропорт Чертовицкое, VOZ (Россия, ICAO код: UUOO)">Чертовицкое</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VOZ          </td>
+                  <td class="views-field views-field-field-icao">
+            UUOO          </td>
+              </tr>
+          <tr class="odd">
+                  <td class="views-field views-field-counter">
+            141.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Великий Устюг          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vus" title=" аэропорт Великий Устюг, VUS (Россия, ICAO код: ULWU)">Великий Устюг</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VUS          </td>
+                  <td class="views-field views-field-field-icao">
+            ULWU          </td>
+              </tr>
+          <tr class="even">
+                  <td class="views-field views-field-counter">
+            142.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Владивосток          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/vvo" title=" аэропорт Владивосток, VVO (Россия, ICAO код: UHWW)">Владивосток</a>          </td>
+                  <td class="views-field views-field-title-3">
+            VVO          </td>
+                  <td class="views-field views-field-field-icao">
+            UHWW          </td>
+              </tr>
+          <tr class="odd views-row-last">
+                  <td class="views-field views-field-counter">
+            143.          </td>
+                  <td class="views-field views-field-field-gorod active">
+            Якутск          </td>
+                  <td class="views-field views-field-field-name">
+            <a href="/aeroport/yks" title=" аэропорт Якутск, YKS (Россия, ICAO код: UEEE)">Якутск</a>          </td>
+                  <td class="views-field views-field-title-3">
+            YKS          </td>
+                  <td class="views-field views-field-field-icao">
+            UEEE          </td>
+              </tr>
+      </tbody>
