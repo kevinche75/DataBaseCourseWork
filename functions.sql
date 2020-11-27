@@ -48,7 +48,7 @@ create or replace function get_number_available_seats(
         return query
                 select seat.number, seat.class from seat
                 left join ticket t on seat.id = t.seat_id
-                where t.id is null;
+                where t.id is null and flight_id=flightId;
 
     end; $$
     language plpgsql;
